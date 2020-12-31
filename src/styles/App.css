@@ -13,7 +13,7 @@ body {
 }
 
 .wrapper {
-    max-width: 640px;
+    max-width: 480px;
     background: #fff;
     margin: 48px auto auto;
     display: flex;
