@@ -4,88 +4,62 @@
 }
 
 * {
-    box-sizing: border-box;
+    @apply box-border;
 }
 
 body {
-    background: rgba(243, 243, 243, 0.5);
-    font-family: "Lato", sans-serif;
+    @apply bg-selfdefine font-semibold font-sans;
 }
 
 .wrapper {
-    max-width: 480px;
-    background: #fff;
-    margin: 48px auto auto;
-    display: flex;
-    flex-direction: column;
-    padding: 50px;
+    @apply max-w-3xl bg-white mt-20 ml-auto mr-auto mb-auto flex flex-col pl-20 pt-10 pr-20 pb-10;
 }
 
 .title {
-    align-self: flex-start;
-    font-size: 3rem;
-    font-weight: 300;
-    color: #333;
-    margin-bottom: 30px;
+    @apply text-gray-700 text-3xl mb-12 font-light self-start;
+}
+
+.input_text {
+    @apply font-semibold font-sans;
 }
 
 .todoInput {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 35px;
+    @apply w-full flex justify-between mb-12;
 }
 
 input {
-    width: 75%;
-    margin-right: 25px;
-    padding: 15px 0 15px 15px;
-    border-radius: 4px;
-    border: 1px solid rgb(238, 238, 238);
+    @apply w-3/4 mr-10 pt-4 pr-0 pb-4 pl-4 rounded-default border-solid border-blue-901 border-default;
 }
 
 button {
-    background: #62c7ff;
-    border: none;
-    font-size: 1rem;
-    font-weight: 300;
-    font-family: "Lato", sans-serif;
-    padding: 15px 25px;
-    border-radius: 4px;
-    color: #fff;
+   @apply pt-4 pb-4 pl-10 pr-10 text-base rounded-default;
 }
 
-/*button {*/
-/*    @apply py-2 px-4 font-semibold rounded-lg shadow-md bg-blue-400;*/
-/*}*/
+button.btn_submit {
+    @apply bg-blue-902  font-sans  text-white border-none font-light;
+}
 
 ul {
-    list-style: none;
-    margin-bottom: 50px;
+    @apply list-none mb-20;
 }
 
 li {
-    font-weight: 300;
-    padding: 20px 0 20px 0;
-    border-top: 1px solid #eee;
-    display: flex;
-    justify-content: space-between;
+    @apply font-light pt-8 pr-0 pb-8 pl-0 flex justify-between;
 }
 
+
 .logo-container {
-    margin-bottom: 25px;
+     @apply mb-10 inline;
 }
 
 img {
-    height: 25px;
+    @apply h-10 float-left;
 }
 
 button.action {
-    color: #333;
-    background: none;
-    padding: 0;
+    @apply bg-none pt-0 pb-0 pr-6 text-gray-600 font-sans; 
 }
 
 button.action:focus {
-    outline: none;
+    @apply outline-none;
 }

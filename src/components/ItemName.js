@@ -10,7 +10,7 @@ const ItemName = props => {
             />
         );
     }
-    return <span onClick={props.toggleIsEditingAt}>{props.children}</span>;
+    return <span className="input_text" onClick={props.toggleIsEditingAt}>{props.children}</span>;
 };
 
 export default ItemName;

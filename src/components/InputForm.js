@@ -10,7 +10,7 @@ const InputForm = props => {
                 value={props.pendingItem}
                 placeholder="填写事项"
             />
-            <button type="submit" name="submit" value="submit">
+            <button className="btn_submit" type="submit" name="submit" value="submit">
                 +
             </button>
         </form>
